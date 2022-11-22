@@ -1,0 +1,134 @@
+@import "/src/sassVariables";
+@import "/src/formInput";
+
+
+.register {
+    &__items {
+        display: flex;
+        justify-content: flex-start;
+
+        height: 100vh;
+    }
+
+    &__item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__header{
+        &--primary {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+
+        }
+        &--secondary {
+            color: $color-medium-gray;
+            
+        }
+    }
+
+    &__container {
+
+        display: block;
+        padding: 4rem;
+    }
+
+    &__subitems {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__subitem {
+        flex: 1;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        
+
+    }
+
+    &__MobileLabel {
+        color: $color-gray !important;
+        font-size: 1.3rem !important;
+    }
+
+    &__phone {
+        margin-left:.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__select {
+
+  
+        height: 4rem;
+
+        margin: 1rem -.5rem 1rem .5rem;
+    
+        &:focus {
+            border: 2px solid $color-primary !important;
+            border-radius: .5rem;
+        }
+    }
+
+}
+
+.PhoneInputInput{
+    border: 1.5px solid $color-medium-gray;
+    border-radius: .5rem;
+    outline: none;
+    height: 4rem;
+    margin-right: -.5rem;
+
+    color: $color-gray;
+
+    &:focus {
+        border: 1.5px solid $color-primary;
+        border-radius: .5rem;
+    }
+}
+
+@media (max-width: 1124px) {
+    .register {
+        &__item1 {
+            display:none !important;
+        }
+        &__header{
+            &--primary {
+                font-size: 2rem;
+            }
+        }
+
+        &__subitem {
+
+    
+
+                margin-right: 2rem;
+
+        }
+    }
+    .PhoneInputInput{
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 591px) {
+    .register {
+        &__container {
+            padding: 3rem;
+        }
+        &__subitems {
+            flex-direction: column;
+        }
+    }
+    
+
+}
+
+
+
+  

@@ -1,0 +1,51 @@
+{
+  "name": "yollty",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@mui/x-date-pickers": "^5.0.8",
+    "dayjs": "^1.11.6",
+    "file-saver": "^2.0.5",
+    "moment": "^2.29.4",
+    "mui-tel-input": "^2.1.0",
+    "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.4",
+    "react-phone-number-input": "^3.2.12",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.6.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

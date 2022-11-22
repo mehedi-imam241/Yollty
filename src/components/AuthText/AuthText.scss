@@ -1,0 +1,79 @@
+@import '/src/sassVariables';
+
+.AuthText {
+    background-color: $color-light-gray;
+    height: 100%;
+    padding: 10rem 7rem ;
+
+
+
+
+    &__mainIcon{
+        margin-bottom: 3rem;
+        &>img{
+            height:5rem;
+        }
+    }
+
+    &__heading{
+        &--primary{
+            font-size: 2.7rem;
+            line-height: 1.4;
+            margin-bottom: 1.6rem;
+        }
+
+        &--secondary {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            word-spacing: .2rem;
+            margin-bottom: 3rem;
+        }
+    
+    }
+
+    &__Items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__Item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+        &__Icon {
+            margin-right: 1.8rem;
+            padding-top: .7rem;
+            &>img {
+                height: 4rem;
+            }
+
+        }
+        &__Text {
+            &>h4{
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__footer {
+        &__icons {
+            display: flex;
+
+            
+
+        }
+        &__icon {
+            flex: 1;
+            margin-top: 2rem;
+            padding-left: 2.5rem;
+            &>img {
+                
+                
+                height: 10rem;
+            }
+        }
+    }
+
+
+}
+
