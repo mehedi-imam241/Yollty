@@ -23,7 +23,6 @@ function ProfileDetails() {
           variant="contained"
           fullWidth
           style={{ marginBottom: "10px", fontWeight: 700 }}
-          href="/edit-profile"
         >
           Fill Profile Details
         </Button>

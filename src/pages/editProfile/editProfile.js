@@ -70,7 +70,6 @@ function EditProfile() {
           color="primary"
           aria-label="go back"
           style={{ position: "absolute" }}
-          href="/profile-details"
         >
           <Back
             style={{
@@ -232,7 +231,6 @@ function EditProfile() {
             endIcon={<Send />}
             type="submit"
             // to="/done"
-            href="/done"
           >
             Submit
           </Button>
