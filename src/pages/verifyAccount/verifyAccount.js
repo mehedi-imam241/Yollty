@@ -18,7 +18,6 @@ function VerifyAccount() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log("ami");
     console.log(data);
   };
 
@@ -36,16 +35,17 @@ function VerifyAccount() {
             align="center"
             marginTop="15vh"
             marginBottom="3vh"
-            fontSize="2.5rem"
+            fontSize="2.7rem"
+            color={'black'}
           >
             Verify Account!
           </Typography>
           <Typography align="center" fontSize="1.5rem">
-            Enter 4 digit Code we have sent to
+            Enter 4 digit Code sent to your mail
           </Typography>
-          <Typography gutterBottom align="center" fontSize="1.5rem">
+          {/* <Typography gutterBottom align="center" fontSize="1.5rem">
             <Link href="#">abcd@test.com</Link>
-          </Typography>
+          </Typography> */}
 
           <Box
             display="flex"
@@ -121,18 +121,19 @@ function VerifyAccount() {
           )}
           <Button
             variant="contained"
-            endIcon={<SendIcon />}
+            // endIcon={<SendIcon />}
             fullWidth
             type="submit"
+            style={{ fontSize: "1.4rem", padding: "1.2rem 2rem" }}
           >
             Proceed
           </Button>
 
-          <Typography align="center" fontSize="1rem" marginTop={".5rem"}>
+          {/* <Typography align="center" fontSize="1.2rem" marginTop={".8rem"}>
             By clicking proceed, you agree to our
             <Link href="#"> Privacy Policy</Link> and
             <Link href="#"> Terms and Conditions</Link>
-          </Typography>
+          </Typography> */}
         </Container>
       </Box>
     </form>

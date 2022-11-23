@@ -227,10 +227,10 @@ function EditProfile() {
           )}
           <Button
             variant="contained"
-            style={{ marginTop: "10px" }}
+            style={{ marginTop: "15px" }}
             endIcon={<Send />}
             type="submit"
-            // to="/done"
+          // to="/done"
           >
             Submit
           </Button>

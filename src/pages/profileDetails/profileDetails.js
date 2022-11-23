@@ -22,20 +22,26 @@ function ProfileDetails() {
         <Button
           variant="contained"
           fullWidth
-          style={{ marginBottom: "10px", fontWeight: 700 }}
+          href="/edit-profile"
+          style={{ marginBottom: "10px", fontWeight: 700, padding: "1.1rem", fontSize: "1rem" }}
         >
           Fill Profile Details
         </Button>
-        <Button variant="outlined" fullWidth href="/done">
+        <Button
+          variant="outlined"
+          fullWidth
+          href="/done"
+          style={{ fontWeight: 700, padding: "1.1rem", fontSize: "1rem" }}
+        >
           Skip
         </Button>
       </Container>
 
-      <Typography align="center" fontSize="1rem" marginTop={".5rem"}>
+      {/* <Typography align="center" fontSize="1rem" marginTop={".5rem"}>
         By filling details, you agree to our
         <Link href="#"> Privacy Policy</Link> and
         <Link href="#"> Terms and Conditions</Link>
-      </Typography>
+      </Typography> */}
     </Box>
   );
 }

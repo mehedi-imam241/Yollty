@@ -52,11 +52,10 @@ function ForgotPassword() {
               </label>
               {errors.Email && <p>{errors.Email.message}</p>}
             </div>
-
             <div>
               <div>
                 <ButtonPrimary text="Reset Password" bType="submit" />
-                <ButtonLink text="Back" toPage="/" />
+                {/* <ButtonLink text="Back" toPage="/" /> */}
               </div>
             </div>
           </div>

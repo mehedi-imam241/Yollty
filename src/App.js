@@ -11,6 +11,10 @@ import ProfileDetails from "./pages/profileDetails/profileDetails";
 import Register from "./pages/register/register";
 import SplashScreen from "./pages/SplashScreen/SplashScreen";
 import VerifyAccount from "./pages/verifyAccount/verifyAccount";
+import Rewords from "./pages/Rewords/rewords";
+import Home from "./pages/Home/home";
+import ScanningQR from "./pages/scanningQR/scanningQR";
+import ScanCollect from "./pages/scanCollect/scanCollect";
 
 export default function App() {
   // const [timeOut, setTimeOut] = useState(false);
@@ -33,13 +37,17 @@ export default function App() {
       <MobileView>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/new-password" element={<NewPassword />} />
           <Route path="/verify-account" element={<VerifyAccount />} />
           <Route path="/profile-details" element={<ProfileDetails />} />
           <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/rewords" element={<Rewords />} />
           <Route path="/done" element={<Done />} />
+          <Route path="/scanQR" element={<ScanningQR />} />
+          <Route path="/scan-collect" element={<ScanCollect />} />
         </Routes>
       </MobileView>
     </>

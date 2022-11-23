@@ -1,7 +1,8 @@
 import { Box, Container, Typography, Button, Link } from "@mui/material";
 
 import React from "react";
-import done from "../../assets/images/Done.svg";
+// import done from "../../assets/images/Done.svg";
+import done from "../../assets/images/reg-done.png";
 import SendIcon from "@mui/icons-material/Send";
 
 function Done() {
@@ -16,19 +17,21 @@ function Done() {
         textAlign={"center"}
         height={"90vh"}
       >
-        <Box width="60vw" height="60vw">
-          <img src={done} alt="img" />
+        <Box>
+          <img src={done} alt="img" style={{ width: "250px" }} />
         </Box>
         <Container>
           <Typography
             align="center"
-            fontSize="3.2rem"
+            fontSize="2.5rem"
             marginTop={".5rem"}
+            color={"black"}
+            padding={0}
             gutterBottom
           >
             Account Created!
           </Typography>
-          <Typography align="center" fontSize="1.5rem" margin={".5rem"}>
+          <Typography align="center" fontSize="1.1rem" margin={".5rem"}>
             Dear User, your account has been created successfully. Continue to
             start using app
           </Typography>
@@ -37,7 +40,7 @@ function Done() {
         <Button
           variant="contained"
           fullWidth
-          style={{ marginBottom: "10px", fontWeight: 700 }}
+          style={{ marginBottom: "10px", fontWeight: 700, padding: "1.1rem", fontSize: "1rem" }}
         >
           Continue
         </Button>

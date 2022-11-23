@@ -6,7 +6,6 @@
     &__items {
         display: flex;
         justify-content: flex-start;
-
         height: 100vh;
     }
 
@@ -14,17 +13,31 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        align-items: center;
+
+    }
+    &__item__inner {
+        margin-top: 40%;
 
     }
     &__header{
         &--primary {
-            
+          margin-top: 5%;
+          text-align: center;  
+          color: #000000;
         }
+        &--subtitle {
+            text-align: center;  
+            font-size: 1.5rem;
+          }
         &--secondary {
             color: $color-medium-gray;
             
         }
+    }
+    &__input{
+        &--topper {
+            margin-left: .5rem;
+          }
     }
 
     &__container {
